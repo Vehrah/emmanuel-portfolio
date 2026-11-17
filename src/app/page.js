@@ -171,7 +171,7 @@ export default function Home() {
 <section className="about-section" id="about">
 
   <div className="about-topline">
-    <span>02 — ABOUT ME</span>
+    <span>01 — ABOUT ME</span>
     <span>GET TO KNOW ME</span>
   </div>
 
@@ -324,7 +324,7 @@ export default function Home() {
 <section className="projects-section" id="work">
 
   <div className="projects-topline">
-    <span>03 — SELECTED WORK</span>
+    <span>02 — SELECTED WORK</span>
     <span>PROJECT / 01</span>
   </div>
 
@@ -615,7 +615,7 @@ export default function Home() {
       {/* SKILLS */}
       <section className="skills-section section-wrap">
         <span className="section-label">
-          03 — SKILLS & CAPABILITIES
+          04 — SKILLS & CAPABILITIES
         </span>
 
         <h2>
@@ -651,7 +651,7 @@ export default function Home() {
       <section className="education-section" id="background">
         <div className="section-wrap">
           <span className="section-label">
-            04 — EDUCATIONAL BACKGROUND
+            05 — EDUCATIONAL BACKGROUND
           </span>
 
           <h2>
@@ -684,7 +684,7 @@ export default function Home() {
    {/* AREAS OF INTEREST */}
       <section className="interest-section section-wrap">
         <span className="section-label">
-          05 — AREAS OF INTEREST
+          06 — AREAS OF INTEREST
         </span>
 
         <div className="interest-list">
@@ -703,7 +703,7 @@ export default function Home() {
   <div className="section-wrap">
 
     <span className="section-label">
-      06 — LET'S CONNECT
+      07 — LET'S CONNECT
     </span>
 
     <h2>
@@ -873,7 +873,7 @@ const response = await fetch(`${API_URL}/api/contact`, {
 
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/emmanuel-orji-b91171405"
             target="_blank"
             rel="noreferrer"
           >
