@@ -22,8 +22,9 @@ const navLinks = [
   { label: "Education", href: "#background" },
   { label: "Areas of Interest", href: "#interests" },
   { label: "Contact", href: "#contact" },
+  { label: "CV", href: "#contact-cv" },
 ];
-
+    
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [contactStatus, setContactStatus] = useState("");
@@ -38,7 +39,7 @@ export default function Home() {
     className="logo"
     onClick={() => setMenuOpen(false)}
   >
-    EU<span>.</span>
+    E O<span>.</span>
   </a>
 
   {/* DESKTOP NAVIGATION */}
@@ -852,6 +853,7 @@ const response = await fetch(`${API_URL}/api/contact`, {
 
       </form>
 
+      
       {/* DIRECT CONTACT DETAILS */}
       <div className="contact-details">
 
@@ -873,9 +875,9 @@ const response = await fetch(`${API_URL}/api/contact`, {
 
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/emmanuel-orji-b91171405"
+            href="https://www.linkedin.com/in/emmanuel-orji-b91171405/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             LinkedIn <ArrowUpRight size={14} />
           </a>
@@ -883,28 +885,43 @@ const response = await fetch(`${API_URL}/api/contact`, {
           <a
             href="https://github.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             GitHub <Code2 size={15} />
           </a>
         </div>
 
+        {/* CV DOWNLOAD */}
+        <div className="contact-cv" id="contact-cv">
+          <div>
+            <span className="contact-details-label">
+              WANT TO KNOW MORE?
+            </span>
+
+            <p>
+              Explore Emmanuel's professional background and experience.
+            </p>
+          </div>
+
+          <a
+            href="/Emmanuel-Udeagha-CV.pdf"
+            download="Emmanuel-Udeagha-CV.pdf"
+          >
+            Download CV <ArrowUpRight size={14} />
+          </a>
+        </div>
+
       </div>
+      {/* END CONTACT DETAILS */}
 
     </div>
-
-    <div className="footer-bottom">
-
-      <span>
-        © 2026 ORJI EMMANUEL UDEAGHA
-      </span>
-
-      <a href="#home">BACK TO TOP ↑</a>
-
-    </div>
+    {/* END CONTACT LAYOUT */}
 
   </div>
+  {/* END SECTION WRAP */}
+
 </footer>
-    </main>
+
+</main>
   );
 }
